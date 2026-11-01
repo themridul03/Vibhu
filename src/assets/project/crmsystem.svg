@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bgGradCrm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1518"/>
+      <stop offset="50%" stop-color="#0e2329"/>
+      <stop offset="100%" stop-color="#050c0e"/>
+    </linearGradient>
+    <linearGradient id="tealEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="glowCrm" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGradCrm)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.08" stroke="#14b8a6" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="750"/>
+    <line x1="600" y1="0" x2="600" y2="750"/>
+    <line x1="900" y1="0" x2="900" y2="750"/>
+  </g>
+
+  <!-- Glowing Orbs -->
+  <circle cx="280" cy="220" r="200" fill="#0d9488" opacity="0.18" filter="url(#glowCrm)"/>
+  <circle cx="950" cy="500" r="220" fill="#0284c7" opacity="0.15" filter="url(#glowCrm)"/>
+
+  <!-- Left: Overview & Stack -->
+  <g transform="translate(80, 100)">
+    <rect width="210" height="38" rx="19" fill="#0d9488" fill-opacity="0.2" stroke="#14b8a6" stroke-opacity="0.6"/>
+    <circle cx="22" cy="19" r="6" fill="#14b8a6"/>
+    <text x="38" y="24" fill="#2dd4bf" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">ENTERPRISE FINTECH</text>
+
+    <text x="0" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="44" font-weight="900" letter-spacing="-1">Loan Management CRM</text>
+    <text x="0" y="130" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="19" font-weight="500">End-to-End User Registration &amp; Loan Application Platform</text>
+
+    <!-- Stats -->
+    <g transform="translate(0, 175)">
+      <rect width="150" height="75" rx="16" fill="#0f2b33" stroke="#1a4854"/>
+      <text x="20" y="36" fill="#2dd4bf" font-family="system-ui, sans-serif" font-size="24" font-weight="800">.NET MVC</text>
+      <text x="20" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Core Business Logic</text>
+    </g>
+
+    <g transform="translate(170, 175)">
+      <rect width="150" height="75" rx="16" fill="#0f2b33" stroke="#1a4854"/>
+      <text x="20" y="36" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="24" font-weight="800">Vue &amp; Angular</text>
+      <text x="20" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Dual Client Suites</text>
+    </g>
+
+    <g transform="translate(340, 175)">
+      <rect width="150" height="75" rx="16" fill="#0f2b33" stroke="#1a4854"/>
+      <text x="20" y="36" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="24" font-weight="800">Stored Procs</text>
+      <text x="20" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">SQL Optimization</text>
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(0, 280)">
+      <rect width="115" height="32" rx="16" fill="#143640" stroke="#0d9488" stroke-opacity="0.4"/>
+      <text x="57" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">.NET MVC</text>
+
+      <rect x="125" width="85" height="32" rx="16" fill="#143640" stroke="#0d9488" stroke-opacity="0.4"/>
+      <text x="167" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Vue.js</text>
+
+      <rect x="220" width="85" height="32" rx="16" fill="#143640" stroke="#0d9488" stroke-opacity="0.4"/>
+      <text x="262" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Angular</text>
+
+      <rect x="315" width="115" height="32" rx="16" fill="#143640" stroke="#0d9488" stroke-opacity="0.4"/>
+      <text x="372" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">SQL Server</text>
+
+      <rect x="440" width="130" height="32" rx="16" fill="#143640" stroke="#0d9488" stroke-opacity="0.4"/>
+      <text x="505" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Loan Workflow</text>
+    </g>
+  </g>
+
+  <!-- Right: Loan CRM Dashboard Mockup -->
+  <g transform="translate(680, 110)">
+    <rect width="440" height="520" rx="24" fill="#081b21" stroke="#164e63" stroke-width="2"/>
+
+    <!-- CRM Header -->
+    <path d="M 0 24 C 0 10.7 10.7 0 24 0 L 416 0 C 429.3 0 440 10.7 440 24 L 440 70 L 0 70 Z" fill="#0e2f3a"/>
+    <text x="35" y="42" fill="#2dd4bf" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Loan Portfolio &amp; Underwriting Dashboard</text>
+    <text x="35" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">● Active Stored Procedures • Real-time Scoring</text>
+
+    <!-- Top KPI cards -->
+    <g transform="translate(25, 90)">
+      <rect width="185" height="75" rx="12" fill="#0e303b" stroke="#155e75"/>
+      <text x="16" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Active Applications</text>
+      <text x="16" y="54" fill="#ffffff" font-family="system-ui, sans-serif" font-size="22" font-weight="800">1,482</text>
+      <text x="120" y="54" fill="#10b981" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">+14.2%</text>
+
+      <rect x="200" width="185" height="75" rx="12" fill="#0e303b" stroke="#155e75"/>
+      <text x="216" y="26" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Avg Approval Speed</text>
+      <text x="216" y="54" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="22" font-weight="800">&lt; 15 min</text>
+    </g>
+
+    <!-- Applications Table List -->
+    <g transform="translate(25, 180)">
+      <rect width="390" height="310" rx="16" fill="#051216" stroke="#164e63"/>
+      
+      <!-- Table Header -->
+      <path d="M 0 16 C 0 7.2 7.2 0 16 0 L 374 0 C 382.8 0 390 7.2 390 16 L 390 40 L 0 40 Z" fill="#0a242c"/>
+      <text x="20" y="25" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">APPLICANT</text>
+      <text x="150" y="25" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">LOAN TYPE</text>
+      <text x="260" y="25" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">AMOUNT</text>
+      <text x="330" y="25" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">STATUS</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(20, 60)">
+        <text x="0" y="16" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Robert Vance</text>
+        <text x="130" y="16" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Commercial</text>
+        <text x="240" y="16" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">$45,000</text>
+        <rect x="305" y="2" width="60" height="20" rx="6" fill="#10b981" fill-opacity="0.2"/>
+        <text x="335" y="16" fill="#10b981" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">APPROVED</text>
+      </g>
+      <line x1="20" y1="92" x2="370" y2="92" stroke="#164e63" stroke-width="0.8"/>
+
+      <!-- Row 2 -->
+      <g transform="translate(20, 110)">
+        <text x="0" y="16" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Sarah Jenkins</text>
+        <text x="130" y="16" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Home Loan</text>
+        <text x="240" y="16" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">$180,000</text>
+        <rect x="305" y="2" width="60" height="20" rx="6" fill="#38bdf8" fill-opacity="0.2"/>
+        <text x="335" y="16" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">REVIEW</text>
+      </g>
+      <line x1="20" y1="142" x2="370" y2="142" stroke="#164e63" stroke-width="0.8"/>
+
+      <!-- Row 3 -->
+      <g transform="translate(20, 160)">
+        <text x="0" y="16" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">David Miller</text>
+        <text x="130" y="16" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Auto Finance</text>
+        <text x="240" y="16" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">$28,500</text>
+        <rect x="305" y="2" width="60" height="20" rx="6" fill="#10b981" fill-opacity="0.2"/>
+        <text x="335" y="16" fill="#10b981" font-family="system-ui, sans-serif" font-size="9" font-weight="bold" text-anchor="middle">APPROVED</text>
+      </g>
+      <line x1="20" y1="192" x2="370" y2="192" stroke="#164e63" stroke-width="0.8"/>
+
+      <!-- Stored proc footer -->
+      <g transform="translate(20, 215)">
+        <rect width="350" height="65" rx="10" fill="#081d24" stroke="#155e75"/>
+        <text x="14" y="24" fill="#2dd4bf" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">SQL SERVER STORED PROC: usp_ProcessLoanUnderwriting</text>
+        <text x="14" y="44" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Automated credit risk check • Sub-50ms execution • Indexed views</text>
+      </g>
+    </g>
+  </g>
+</svg>

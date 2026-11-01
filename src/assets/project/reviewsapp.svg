@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bgGradReview" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120c22"/>
+      <stop offset="50%" stop-color="#1c1136"/>
+      <stop offset="100%" stop-color="#090514"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="shopifyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#95bf47"/>
+      <stop offset="100%" stop-color="#5e8e3e"/>
+    </linearGradient>
+    <filter id="glowReview" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGradReview)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.08" stroke="#a855f7" stroke-width="1">
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="750"/>
+    <line x1="600" y1="0" x2="600" y2="750"/>
+    <line x1="900" y1="0" x2="900" y2="750"/>
+  </g>
+
+  <!-- Glowing Orbs -->
+  <circle cx="280" cy="220" r="200" fill="#7c3aed" opacity="0.18" filter="url(#glowReview)"/>
+  <circle cx="950" cy="500" r="220" fill="#95bf47" opacity="0.14" filter="url(#glowReview)"/>
+
+  <!-- Left: Overview & Stack -->
+  <g transform="translate(80, 100)">
+    <rect width="210" height="38" rx="19" fill="#7c3aed" fill-opacity="0.2" stroke="#a855f7" stroke-opacity="0.6"/>
+    <circle cx="22" cy="19" r="6" fill="#a855f7"/>
+    <text x="38" y="24" fill="#c084fc" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">SHOPIFY MICROSERVICES</text>
+
+    <text x="0" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="44" font-weight="900" letter-spacing="-1">Reviews Application</text>
+    <text x="0" y="130" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="19" font-weight="500">Automated Review Generation Engine for Shopify Stores</text>
+
+    <!-- Stats -->
+    <g transform="translate(0, 175)">
+      <rect width="150" height="75" rx="16" fill="#1e1438" stroke="#3b2d66"/>
+      <text x="20" y="36" fill="#c084fc" font-family="system-ui, sans-serif" font-size="24" font-weight="800">.NET 8</text>
+      <text x="20" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Microservices</text>
+    </g>
+
+    <g transform="translate(170, 175)">
+      <rect width="150" height="75" rx="16" fill="#1e1438" stroke="#3b2d66"/>
+      <text x="20" y="36" fill="#95bf47" font-family="system-ui, sans-serif" font-size="24" font-weight="800">Shopify API</text>
+      <text x="20" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Storefront Sync</text>
+    </g>
+
+    <g transform="translate(340, 175)">
+      <rect width="150" height="75" rx="16" fill="#1e1438" stroke="#3b2d66"/>
+      <text x="20" y="36" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="24" font-weight="800">Ocelot</text>
+      <text x="20" y="58" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">API Gateway</text>
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(0, 280)">
+      <rect width="80" height="32" rx="16" fill="#291a4d" stroke="#6d28d9" stroke-opacity="0.4"/>
+      <text x="40" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">.NET 8</text>
+
+      <rect x="90" width="130" height="32" rx="16" fill="#291a4d" stroke="#6d28d9" stroke-opacity="0.4"/>
+      <text x="155" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Ocelot Gateway</text>
+
+      <rect x="230" width="105" height="32" rx="16" fill="#291a4d" stroke="#6d28d9" stroke-opacity="0.4"/>
+      <text x="282" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Angular 17</text>
+
+      <rect x="345" width="120" height="32" rx="16" fill="#291a4d" stroke="#6d28d9" stroke-opacity="0.4"/>
+      <text x="405" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Microservices</text>
+
+      <rect x="475" width="95" height="32" rx="16" fill="#291a4d" stroke="#6d28d9" stroke-opacity="0.4"/>
+      <text x="522" y="21" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Shopify</text>
+    </g>
+  </g>
+
+  <!-- Right: Architecture & Review Card Mockup -->
+  <g transform="translate(680, 110)">
+    <rect width="440" height="520" rx="24" fill="#140d28" stroke="#311e5a" stroke-width="2"/>
+
+    <!-- Architecture flow header -->
+    <path d="M 0 24 C 0 10.7 10.7 0 24 0 L 416 0 C 429.3 0 440 10.7 440 24 L 440 70 L 0 70 Z" fill="#1f143d"/>
+    <text x="35" y="42" fill="#c084fc" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Ocelot Gateway Architecture</text>
+    <text x="35" y="58" fill="#95bf47" font-family="system-ui, sans-serif" font-size="11">● Load Balanced • High Availability</text>
+
+    <!-- Microservices Routing Nodes -->
+    <g transform="translate(25, 90)">
+      <rect width="180" height="56" rx="12" fill="#251747" stroke="#4c2889"/>
+      <text x="16" y="25" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Client / Angular 17</text>
+      <text x="16" y="44" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Customer Review UI</text>
+
+      <!-- Arrow -->
+      <line x1="180" y1="28" x2="210" y2="28" stroke="#c084fc" stroke-width="2" stroke-dasharray="3 3"/>
+
+      <rect x="210" width="180" height="56" rx="12" fill="#2e1b59" stroke="#7c3aed"/>
+      <text x="226" y="25" fill="#c084fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Ocelot API Gateway</text>
+      <text x="226" y="44" fill="#a78bfa" font-family="system-ui, sans-serif" font-size="11">Routing &amp; Auth Tokens</text>
+    </g>
+
+    <!-- Service Backends -->
+    <g transform="translate(25, 165)">
+      <rect width="120" height="65" rx="12" fill="#1c1136" stroke="#4c2889"/>
+      <text x="14" y="26" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Service: Auth</text>
+      <text x="14" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">JWT Verification</text>
+
+      <rect x="135" width="120" height="65" rx="12" fill="#1c1136" stroke="#4c2889"/>
+      <text x="149" y="26" fill="#95bf47" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Service: Review</text>
+      <text x="149" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Submission/CRUD</text>
+
+      <rect x="270" width="120" height="65" rx="12" fill="#1c1136" stroke="#4c2889"/>
+      <text x="284" y="26" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Service: Sync</text>
+      <text x="284" y="46" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Shopify Webhooks</text>
+    </g>
+
+    <!-- Sample Shopify Review Render Card -->
+    <g transform="translate(25, 255)">
+      <rect width="390" height="235" rx="16" fill="#0d071a" stroke="#2e1b59"/>
+      <g transform="translate(20, 20)">
+        <text x="0" y="16" fill="#facc15" font-family="system-ui, sans-serif" font-size="18">★★★★★</text>
+        <text x="90" y="15" fill="#00ffae" font-family="system-ui, sans-serif" font-size="11" font-weight="bold">Verified Shopify Purchase</text>
+        <text x="0" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="bold">"Fastest review submission experience!"</text>
+        <text x="0" y="66" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Integration with Shopify product pages was instant. Reviews load</text>
+        <text x="0" y="86" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">under 120ms with Angular 17 and .NET 8 backend services.</text>
+
+        <line x1="0" y1="110" x2="350" y2="110" stroke="#1f143d" stroke-width="1"/>
+        <text x="0" y="132" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Customer: Emma S. • Store: Nordic Furnishings</text>
+        
+        <rect x="0" y="150" width="105" height="26" rx="6" fill="#1f143d"/>
+        <text x="52" y="167" fill="#c084fc" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">.NET 8 Gateway</text>
+
+        <rect x="115" y="150" width="125" height="26" rx="6" fill="#1f143d"/>
+        <text x="177" y="167" fill="#95bf47" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Shopify App Store</text>
+      </g>
+    </g>
+  </g>
+</svg>
