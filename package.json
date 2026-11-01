@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^5.0.3",
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.16.1",
     "@types/canvas-confetti": "^1.9.0",
